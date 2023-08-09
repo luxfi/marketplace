@@ -38,7 +38,7 @@ const Hero: FC<{
           textAlign: 'center',
           color: '$gray12'
         }}
-      >LUX URANIUM</Text>
+      >LUX SILVER</Text>
       <Box css={{  borderRadius: 16, backgroundColor: 'black', p: 36, mt: '$2' }} >
         <video
           loop
