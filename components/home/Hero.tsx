@@ -31,14 +31,6 @@ const Hero: FC<{
         backgroundColor: 'transparent'
       }}
     >
-      <Text style='h4' css={{textAlign: 'center', color: '$gray12'}} >ALL NEW ASSET BACKED</Text>
-      <Text
-        style='h2'
-        css={{
-          textAlign: 'center',
-          color: '$gray12'
-        }}
-      >LUX SILVER</Text>
       <Box css={{  borderRadius: 16, backgroundColor: 'black', p: 36, mt: '$2' }} >
         <video
           loop
