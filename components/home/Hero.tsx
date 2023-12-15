@@ -31,7 +31,7 @@ const Hero: FC<{
         backgroundColor: 'transparent'
       }}
     >
-      <Text style='h4' css={{textAlign: 'center', color: '$gray12'}} >RUN THE NETWORK:</Text>
+      <Text style='h4' css={{textAlign: 'center', color: '$gray12'}} >RUN THE NETWORK</Text>
       <Text
         style='h2'
         css={{
@@ -54,7 +54,7 @@ const Hero: FC<{
       <Flex direction='row' css={{ mt: '$2', gap: '$2'}} className="grid h-[100px] w-[380px] grid-cols-2 gap-4">
         <Link href={tokenHref}>
           <Button >
-            Mint Now
+            Browse Collection
           </Button>
         </Link>
         <a href={learnMoreHref}>
