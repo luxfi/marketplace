@@ -49,33 +49,33 @@ export const { createTheme, keyframes, styled, globalCss, getCssText } =
         ...green,
         ...indigo,
 
-        //Aliases
-        primary1: '#151718',
-        primary2: '#1a1d1e',
-        primary3: '#202425',
-        primary4: '#26292b',
-        primary5: '#2b2f31',
-        primary6: '#313538',
-        primary7: '#3a3f42',
-        primary8: '#000',
-        primary9: '#000',
-        primary10: '#333',
-        primary11: '#9ba1a6',
-        primary12: '#ecedee',
+        //Primary
+        primary1: '$violet1',
+        primary2: '$violet2',
+        primary3: '$violet3',
+        primary4: '$violet4',
+        primary5: '#222',
+        primary6: '$violet6',
+        primary7: '$violet7',
+        primary8: '$violet8',
+        primary9: '$violet9',
+        primary10: '#ddd',
+        primary11: '$violet11',
+        primary12: '$violet12',
 
-          // Secondary == slate
-        secondary1: '#fbfcfd',
-        secondary2: '#f8f9fa',
-        secondary3: '#f1f3f5',
-        secondary4: '#eceef0',
-        secondary5: '#e6e8eb',
-        secondary6: '#dfe3e6',
-        secondary7: '#d7dbdf',
-        secondary8: '#c1c8cd',
-        secondary9: '#889096',
-        secondary10: '#7e868c',
-        secondary11: '#687076',
-        secondary12: '#11181c',
+        //Secondary
+        secondary1: '$violetA1',
+        secondary2: '$violetA2',
+        secondary3: '$violetA3',
+        secondary4: '$violetA4',
+        secondary5: '$violetA5',
+        secondary6: '$violetA6',
+        secondary7: '$violetA7',
+        secondary8: '$violetA8',
+        secondary9: '$violetA9',
+        secondary10: '$violetA10',
+        secondary11: '$violetA11',
+        secondary12: '$violetA12',
 
         //Gray
         gray1: '$slate1',
@@ -250,6 +250,8 @@ export const darkTheme = createTheme({
     ...blackA,
 
     //Aliases
+    slate1: '#000',
+    slate2: '#111',
 
     ////Primary
     //primary1: '$iris1',
