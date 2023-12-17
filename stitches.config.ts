@@ -251,20 +251,47 @@ export const darkTheme = createTheme({
 
     //Aliases
 
-    //Gray
-    gray1: '$slate1',
-    gray2: '$slate2',
-    gray3: '#111',
-    gray4: '$slate4',
-    gray5: '$slate5',
-    gray6: '$slate6',
-    gray7: '$slate7',
-    gray8: '$slate8',
-    gray9: '$slate9',
-    gray10: '$slate10',
-    gray11: '$slate11',
-    gray12: '$slate12',
->>>>>>> 6ba4763 (V2 market UI)
+    ////Primary
+    //primary1: '$iris1',
+    //primary2: '$iris2',
+    //primary3: '$iris3',
+    //primary4: '$iris4',
+    //primary5: '$iris5',
+    //primary6: '$iris6',
+    //primary7: '$iris7',
+    //primary8: '$iris8',
+    //primary9: '$iris9',
+    //primary10: '$iris10',
+    //primary11: '$iris11',
+    //primary12: '$iris12',
+
+    ////Secondary
+    //secondary1: '$violetA1',
+    //secondary2: '$violetA2',
+    //secondary3: '$violetA3',
+    //secondary4: '$violetA4',
+    //secondary5: '$violetA5',
+    //secondary6: '$violetA6',
+    //secondary7: '$violetA7',
+    //secondary8: '$violetA8',
+    //secondary9: '$violetA9',
+    //secondary10: '$violetA10',
+    //secondary11: '$violetA11',
+    //secondary12: '$violetA12',
+
+    ////Gray
+    //gray1: '$slate1',
+    //gray2: '$slate2',
+    //gray3: '$slate3',
+    //gray4: '$slate4',
+    //gray5: '$slate5',
+    //gray6: '$slate6',
+    //gray7: '$slate7',
+    //gray8: '$slate8',
+    //gray9: '$slate9',
+    //gray10: '$slate10',
+    //gray11: '$slate11',
+    //gray12: '$slate12',
 
     accent: 'black',
 
