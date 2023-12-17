@@ -74,6 +74,7 @@ const reservoirKitThemeOverrides = {
   font: inter.style.fontFamily,
   headlineFont: 'Inter',
   font: 'Inter',
+  fontFamily: 'Inter',
   primaryColor: '#444',
   primaryHoverColor: 'white',
 }
@@ -126,15 +127,31 @@ function MyApp({
     if (theme == 'dark') {
       setReservoirKitTheme(reservoirDarkTheme(reservoirKitThemeOverrides))
       setRainbowKitTheme(
-        rainbowDarkTheme({
-          borderRadius: 'small',
-        })
-      )
+        Object.assign(rainbowDarkTheme({
+          accentColor: 'white',
+          accentColorForeground: '#111',
+          borderRadius: 'medium',
+          fontStack: 'system',
+          overlayBlur: 'small',
+        }), {
+        colors: {
+          actionButtonSecondaryBackground: '#000',
+          actionButtonBorder: '#111',
+          closeButton: 'black',
+          closeButtonBackground: 'white',
+          modalBackground: '#111',
+          modalBorder: '#111',
+        }
+      }))
     } else {
       setReservoirKitTheme(reservoirLightTheme(reservoirKitThemeOverrides))
       setRainbowKitTheme(
         rainbowLightTheme({
-          borderRadius: 'small',
+          accentColor: 'white',
+          accentColorForeground: 'black',
+          borderRadius: 'medium',
+          fontStack: 'system',
+          overlayBlur: 'small',
         })
       )
     }

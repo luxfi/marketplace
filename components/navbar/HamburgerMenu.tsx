@@ -261,7 +261,7 @@ const HamburgerMenu = () => {
                 </Text>
               </Link>
               <Anchor
-                href="https://docs.reservoir.tools/docs"
+                href="https://lux.town"
                 target="_blank"
                 css={{
                   borderBottom: '1px solid $gray4',
@@ -271,7 +271,7 @@ const HamburgerMenu = () => {
                   width: '100%',
                 }}
               >
-                <Text style="subtitle1">Docs</Text>
+                <Text style="subtitle1">Mint</Text>
               </Anchor>
             </Flex>
             <Box>
