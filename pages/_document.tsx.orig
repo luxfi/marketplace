@@ -37,6 +37,11 @@ class MyDocument extends Document {
           type="image/svg"
           href="https://marketplace.reservoir.tools/reservoir.svg"
         />
+<<<<<<< HEAD
+
+        {/* Reservoir meta tags */}
+        <meta property="reservoir:title" content="Reservoir NFT Explorer" />
+=======
         <title>LUX Market | Open Source NFT Marketplace</title>
         <meta
           name="description"
@@ -79,6 +84,7 @@ class MyDocument extends Document {
 
         {/* LUX Meta Tags: https://docs.reservoir.tools/docs/reservoir-meta-tags */}
         <meta property="reservoir:title" content="LUX Market" />
+>>>>>>> fb1f112 (Update metadata)
         <meta property="reservoir:icon" content="/reservoir-source-icon.png" />
         <meta
           property="reservoir:token-url-mainnet"
