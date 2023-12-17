@@ -29,6 +29,7 @@ const proxy = async (req: NextApiRequest, res: NextApiResponse) => {
   }
 
   const { slug } = query
+
   // Isolate the query object
   delete query.slug
 
@@ -48,6 +49,12 @@ const proxy = async (req: NextApiRequest, res: NextApiResponse) => {
 
   const url = new URL(endpoint.replace(chainPrefix, ''), chain.reservoirBaseUrl)
   setParams(url, query)
+
+  // Redirect logo
+  if (/reservoir.hub\/logo/.exec(url.href)) {
+    res.redirect('https://i.seadn.io/gcs/files/9f3da7948bc4386d93117131dd525bf9.png?w=500&auto=format')
+    return
+  }
 
   if (endpoint.includes('redirect/')) {
     // Redirect eth and weth currency icons to self-hosted
