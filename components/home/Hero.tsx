@@ -31,6 +31,14 @@ const Hero: FC<{
         backgroundColor: 'transparent'
       }}
     >
+      <Text style='h4' css={{textAlign: 'center', color: '$gray12'}} >RUN THE NETWORK:</Text>
+      <Text
+        style='h2'
+        css={{
+          textAlign: 'center',
+          color: '$gray12'
+        }}
+      >LUX GENESIS</Text>
       <Box css={{  borderRadius: 16, backgroundColor: 'black', p: 36, mt: '$2' }} >
         <video
           loop
@@ -44,16 +52,16 @@ const Hero: FC<{
         </video>
       </Box>
       <Flex direction='row' css={{ mt: '$2', gap: '$2'}} className="grid h-[100px] w-[380px] grid-cols-2 gap-4">
+        <Link href={tokenHref}>
+          <Button >
+            Mint Now
+          </Button>
+        </Link>
         <a href={learnMoreHref}>
           <Button color='secondary'>
             Learn More
           </Button>
         </a>
-        <Link href={tokenHref}>
-          <Button >
-            Buy Now
-          </Button>
-        </Link>
       </Flex>
     </Flex>
   )
