@@ -33,15 +33,15 @@ const SectionLink: FC<SectionLinkProps> = ({ name, href }) => (
 const developerSectionLinks = [
   {
     name: 'Docs',
-    href: 'https://docs.reservoir.tools/docs',
-  },
-  {
-    name: 'API Reference',
-    href: 'https://docs.reservoir.tools/reference/overview',
+    href: 'https://docs.lux.network',
   },
   {
     name: 'Github',
-    href: 'https://github.com/reservoirprotocol',
+    href: 'https://github.com/luxdefi',
+  },
+  {
+    name: 'Technology',
+    href: 'https://docs.lux.network/technology/',
   },
   {
     name: 'Testnets',
@@ -51,16 +51,16 @@ const developerSectionLinks = [
 
 const companySectionLinks = [
   {
-    name: 'Jobs',
-    href: 'https://jobs.ashbyhq.com/reservoir',
+    name: 'About',
+    href: 'https://lux.partners',
   },
   {
     name: 'Terms of Use',
-    href: 'https://reservoir.tools/terms',
+    href: 'https://lux.market/terms',
   },
   {
     name: 'Privacy Policy',
-    href: 'https://reservoir.tools/privacy',
+    href: 'https://lux.market/privacy',
   },
 ]
 
@@ -102,15 +102,24 @@ export const Footer = () => {
         direction="column"
         css={{ alignItems: 'flex-start', '@bp600': { alignItems: 'flex-end' } }}
       >
-        <SectionTitle title="Join Reservoir Community" />
+        <SectionTitle title="Join LUX Community" />
         <Flex css={{ gap: '$4', mt: 16 }}>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://twitter.com/reservoir0x"
+            href="https://twitter.com/luxdefi"
           >
             <Button size="xs" color="gray3">
               <FontAwesomeIcon icon={faTwitter} width={14} height={14} />
+            </Button>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://discord.gg/GPyuT6z9N3"
+          >
+            <Button size="xs" color="gray3">
+              <FontAwesomeIcon icon={faDiscord} width={14} height={14} />
             </Button>
           </a>
         </Flex>
