@@ -1,12 +1,11 @@
-<h3 align="center">Reservoir Market v2</h3>
+<h3 align="center">Lux Market</h3>
   <p align="center">
-An open source NFT marketplace built on Reservoir.
 
-<!-- ABOUT THE PROJECT -->
+At [Lux Partners](https://lux.partners), we're building the future of real world assets.
 
-## About The Project
+Lux Finance is an open source protocol built on the best in DeFi.
 
-Reservoir Market v2 is an open source marketplace built with Reservoir APIs that enables access to instant liquidity aggregated from major marketplace. We encourage developers to use this project as a reference for their own implementation or even fork the project and make their own meaningful changes. The project is lightly configurable refer to the configuration variables below. If you're looking for a no-code solution check out our [v1 marketplace](https://github.com/reservoirprotocol/marketplace-v1).
+Lux Market v2 is an open source marketplace built with Reservoir APIs that enables access to instant liquidity aggregated from major marketplace. We encourage developers to use this project as a reference for their own implementation or even fork the project and make their own meaningful changes. The project is lightly configurable refer to the configuration variables below. If you're looking for a no-code solution check out our [v1 marketplace](https://github.com/reservoirprotocol/marketplace-v1).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -70,6 +69,9 @@ Reservoir Market v2 is lightly configurable with the configurations below. You c
 | NEXT_PUBLIC_MARKETPLACE_SOURCE | `false` | Marketplace source, used to attribute a source to orders. Must be a valid domain | reservoir.tools |
 
 In addition to the configuration above we've also added comments prefixed with `CONFIGURABLE:` throughout the app pointing out some pieces of code where you could customize functionality. After cloning the app make sure to search the repo for the aforementioned prefix.
+=======
+## Development
+>>>>>>> efc8787 (Add LICENSE)
 
 ### Run the App
 
@@ -93,7 +95,10 @@ This is a Next.js app that can be easily deployed using [Vercel](https://vercel.
 
 ## Contact
 
-Twitter: [@reservoir0x](https://twitter.com/reservoir0x)
-Project Link: [Reservoir](https://reservoirprotocol.github.io/)
+Twitter: [@luxdefi](https://twitter.com/luxdefi)
+Project Link: [Reservoir](https://lux.finance/)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+
+## License
+
+This project is MIT licensed.
