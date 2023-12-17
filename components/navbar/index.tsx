@@ -10,6 +10,7 @@ import NavItem from './NavItem'
 import ThemeSwitcher from './ThemeSwitcher'
 import HamburgerMenu from './HamburgerMenu'
 import MobileSearch from './MobileSearch'
+import { useTheme } from 'next-themes'
 import { useMediaQuery } from 'react-responsive'
 import { useMarketplaceChain, useMounted } from '../../hooks'
 import { useAccount } from 'wagmi'
@@ -22,6 +23,7 @@ export const NAVBAR_HEIGHT = 81
 export const NAVBAR_HEIGHT_MOBILE = 77
 
 const Navbar = () => {
+  const { theme } = useTheme()
   const { isConnected } = useAccount()
   const isMobile = useMediaQuery({ query: '(max-width: 960px' })
   const isMounted = useMounted()
@@ -50,7 +52,7 @@ const Navbar = () => {
         width: '100%',
         borderBottom: '1px solid $gray4',
         zIndex: 999,
-        background: '$grey1',
+        background: '$slate1',
         position: 'fixed',
         top: 0,
         left: 0,
@@ -234,13 +236,10 @@ const Navbar = () => {
           )}
         </Flex>
 
-      <Flex css={{ gap: '$3' }} justify="end" align="center">
-        <ThemeSwitcher />
-
         {isConnected ? (
           <AccountSidebar />
         ) : (
-          <Box css={{ maxWidth: '220px' }}>
+          <Box css={{ maxWidth: '185px' }}>
             <ConnectWalletButton />
           </Box>
         )}
