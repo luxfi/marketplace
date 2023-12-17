@@ -5,7 +5,7 @@ const Button = styled('button', {
   fontWeight: 700,
   fontSize: 16,
   fontFamily: '$button',
-  transition: 'background-color 250ms linear',
+  transition: 'background-color 100ms linear',
   gap: '$space$2',
   display: 'inline-flex',
   alignItems: 'center',
@@ -23,6 +23,17 @@ const Button = styled('button', {
     color: '$gray11',
   },
   variants: {
+
+    variant: {
+      contained: {
+
+      },
+      outlined: {
+        backgroundColor: 'transparent',
+        borderStyle: 'solid',
+        borderWidth: '1px'
+      }
+    },
     color: {
       primary: {
         backgroundColor: '$primary1',
@@ -48,18 +59,19 @@ const Button = styled('button', {
         backgroundColor: '$gray3',
         color: '$gray12',
         '&:hover': {
-          backgroundColor: '$gray4',
+          backgroundColor: '$gray5',
         },
       },
       gray4: {
         backgroundColor: '$gray4',
         color: '$gray12',
         '&:hover': {
-          backgroundColor: '$gray5',
+          backgroundColor: '$gray6',
         },
       },
       ghost: {
         backgroundColor: 'transparent',
+        color: '$gray1',
         p: 0,
       },
     },
@@ -141,9 +153,43 @@ const Button = styled('button', {
         p: 0,
       },
     },
+    {
+      variant: 'outlined',
+      color: 'primary',
+      css: {
+        borderColor: '$primary4',
+        color: '$primary4',
+        backgroundColor: 'transparent',
+        borderStyle: 'solid',
+        borderWidth: '1px',
+        '&:hover': {
+          backgroundColor: '$primary12',
+          color: '$primary1',
+          borderColor: '$primary1',
+        },
+      }
+    },
+    {
+      variant: 'outlined',
+      color: 'secondary',
+      css: {
+        borderColor: '$secondary4',
+        color: '$secondary4',
+        backgroundColor: 'transparent',
+        borderStyle: 'solid',
+        borderWidth: '1px',
+        '&:hover': {
+          backgroundColor: '$secondary12',
+          color: '$secondary1',
+          borderColor: '$secondary1',
+        },
+      }
+    }
+
   ],
   defaultVariants: {
     color: 'primary',
+    variant: 'contained',
     corners: 'rounded',
     size: 'medium',
   },

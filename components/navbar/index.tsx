@@ -10,7 +10,6 @@ import NavItem from './NavItem'
 import ThemeSwitcher from './ThemeSwitcher'
 import HamburgerMenu from './HamburgerMenu'
 import MobileSearch from './MobileSearch'
-import { useTheme } from 'next-themes'
 import { useMediaQuery } from 'react-responsive'
 import { useMarketplaceChain, useMounted } from '../../hooks'
 import { useAccount } from 'wagmi'
@@ -23,7 +22,6 @@ export const NAVBAR_HEIGHT = 81
 export const NAVBAR_HEIGHT_MOBILE = 77
 
 const Navbar = () => {
-  const { theme } = useTheme()
   const { isConnected } = useAccount()
   const isMobile = useMediaQuery({ query: '(max-width: 960px' })
   const isMounted = useMounted()
@@ -236,10 +234,16 @@ const Navbar = () => {
           )}
         </Flex>
 
+<<<<<<< HEAD
+=======
+      <Flex css={{ gap: '$3' }} justify="end" align="center">
+        {/* <ThemeSwitcher /> */}
+        <ChainSwitcher />
+>>>>>>> 0baac1d (rebuilt hero as per previous version;)
         {isConnected ? (
           <AccountSidebar />
         ) : (
-          <Box css={{ maxWidth: '185px' }}>
+          <Box css={{ maxWidth: '220px' }}>
             <ConnectWalletButton />
           </Box>
         )}

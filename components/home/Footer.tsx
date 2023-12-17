@@ -8,7 +8,7 @@ type SectionTitleProps = {
 }
 
 const SectionTitle: FC<SectionTitleProps> = ({ title }) => (
-  <Text style="subtitle1" css={{ color: '$gray12', mb: 8 }}>
+  <Text style="subtitle1" css={{ color: '$gray5', mb: 8 }}>
     {title}
   </Text>
 )
@@ -109,7 +109,7 @@ export const Footer = () => {
             rel="noopener noreferrer"
             href="https://twitter.com/luxdefi"
           >
-            <Button size="xs" color="gray3">
+            <Button size="xs" color="ghost">
               <FontAwesomeIcon icon={faTwitter} width={14} height={14} />
             </Button>
           </a>
@@ -118,7 +118,7 @@ export const Footer = () => {
             rel="noopener noreferrer"
             href="https://instagram.com/luxdefi"
           >
-            <Button size="xs" color="gray3">
+            <Button size="xs" color="ghost">
               <FontAwesomeIcon icon={faInstagram} width={14} height={14} />
             </Button>
           </a>
@@ -127,7 +127,7 @@ export const Footer = () => {
             rel="noopener noreferrer"
             href="https://medium.com/luxdefi"
           >
-            <Button size="xs" color="gray3">
+            <Button size="xs" color="ghost">
               <FontAwesomeIcon icon={faMedium} width={14} height={14} />
             </Button>
           </a>
@@ -136,7 +136,7 @@ export const Footer = () => {
             rel="noopener noreferrer"
             href="https://discord.gg/GPyuT6z9N3"
           >
-            <Button size="xs" color="gray3">
+            <Button size="xs" color="ghost">
               <FontAwesomeIcon icon={faDiscord} width={14} height={14} />
             </Button>
           </a>
@@ -145,7 +145,7 @@ export const Footer = () => {
             rel="noopener noreferrer"
             href="https://t.me/luxdefi"
           >
-            <Button size="xs" color="gray3">
+            <Button size="xs" color="ghost">
               <FontAwesomeIcon icon={faTelegram} width={14} height={14} />
             </Button>
           </a>
