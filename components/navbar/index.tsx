@@ -22,10 +22,6 @@ import * as HoverCard from '@radix-ui/react-hover-card'
 export const NAVBAR_HEIGHT = 81
 export const NAVBAR_HEIGHT_MOBILE = 77
 
-const loadPortfolio = () => {
-  document.location = '/portfolio'
-}
-
 const Navbar = () => {
   const { theme } = useTheme()
   const { isConnected } = useAccount()
@@ -67,11 +63,14 @@ const Navbar = () => {
     >
       <Box css={{ flex: 1 }}>
         <Flex align="center">
-          <Link href="/">
-            <Box css={{ width: 34, cursor: 'pointer' }}>
-              <span style={{fontSize: '32px'}}>
-                {`▼`}
-              </span>
+          <Link href={`/${routePrefix}`}>
+            <Box css={{ width: 46, cursor: 'pointer' }}>
+              <Image
+                src="/reservoirLogo.svg"
+                width={36}
+                height={36}
+                alt="Reservoir"
+              />
             </Box>
           </Link>
         </Flex>
@@ -113,11 +112,14 @@ const Navbar = () => {
         }}
       >
         <Flex align="center">
-          <Link href="/">
-            <Box css={{ width: 22, cursor: 'pointer' }}>
-              <span style={{fontSize: '22px'}}>
-                {`▼`}
-              </span>
+          <Link href={`/${routePrefix}`}>
+            <Box css={{ cursor: 'pointer' }}>
+              <Image
+                src="/reservoirLogo.svg"
+                width={36}
+                height={36}
+                alt="Reservoir"
+              />
             </Box>
           </Link>
           <Flex
