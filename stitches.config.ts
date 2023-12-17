@@ -58,9 +58,9 @@ export const { createTheme, keyframes, styled, globalCss, getCssText } =
         primary6: '$violet6',
         primary7: '$violet7',
         primary8: '$violet8',
-        primary9: '$violet9',
+        primary9: 'white',
         primary10: '#ddd',
-        primary11: '$violet11',
+        primary11: '#333',
         primary12: '$violet12',
 
         //Secondary
@@ -253,6 +253,7 @@ export const darkTheme = createTheme({
     slate1: '#000',
     slate2: '#111',
 
+<<<<<<< HEAD
     ////Primary
     //primary1: '$iris1',
     //primary2: '$iris2',
@@ -266,6 +267,21 @@ export const darkTheme = createTheme({
     //primary10: '$iris10',
     //primary11: '$iris11',
     //primary12: '$iris12',
+=======
+    //Primary
+    primary1: '$violet1',
+    primary2: '$violet2',
+    primary3: '$violet3',
+    primary4: '$violet4',
+    primary5: '#222',
+    primary6: '$violet6',
+    primary7: '$violet7',
+    primary8: '$violet8',
+    primary9: 'white',
+    primary10: '#ddd',
+    primary11: '#ccc',
+    primary12: '$violet12',
+>>>>>>> 14cea1b (Change colors)
 
     ////Secondary
     //secondary1: '$violetA1',
@@ -281,19 +297,19 @@ export const darkTheme = createTheme({
     //secondary11: '$violetA11',
     //secondary12: '$violetA12',
 
-    ////Gray
-    //gray1: '$slate1',
-    //gray2: '$slate2',
-    //gray3: '$slate3',
-    //gray4: '$slate4',
-    //gray5: '$slate5',
-    //gray6: '$slate6',
-    //gray7: '$slate7',
-    //gray8: '$slate8',
-    //gray9: '$slate9',
-    //gray10: '$slate10',
-    //gray11: '$slate11',
-    //gray12: '$slate12',
+    //Gray
+    gray1: '$slate1',
+    gray2: '$slate2',
+    gray3: '#111',
+    gray4: '#111',
+    gray5: '$slate5',
+    gray6: '$slate6',
+    gray7: '#333',
+    gray8: '$slate8',
+    gray9: '$slate9',
+    gray10: '$slate10',
+    gray11: '$slate11',
+    gray12: '#eee',
 
     accent: 'black',
 
