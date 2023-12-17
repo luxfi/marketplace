@@ -5,7 +5,7 @@ const Button = styled('button', {
   fontWeight: 700,
   fontSize: 16,
   fontFamily: '$button',
-  transition: 'background-color 100ms linear',
+  transition: 'background-color 250ms linear',
   gap: '$space$2',
   display: 'inline-flex',
   alignItems: 'center',
@@ -23,55 +23,37 @@ const Button = styled('button', {
     color: '$gray11',
   },
   variants: {
-
-    variant: {
-      contained: {
-
-      },
-      outlined: {
-        backgroundColor: 'transparent',
-        borderStyle: 'solid',
-        borderWidth: '1px'
-      }
-    },
     color: {
       primary: {
-        backgroundColor: '$primary1',
-        border: '0px solid $accent1',
-        color: '$accent1',
+        backgroundColor: '$primary9',
+        color: 'white',
         '&:hover': {
-          backgroundColor: '$primary1',
-          border: '2px solid $accents1',
-          color: '$accent1',
+          backgroundColor: '$primary10',
         },
       },
       secondary: {
-        backgroundColor: '$gray4',
-        border: '2px solid transparent',
-        color: '$primary1',
+        backgroundColor: '$secondary4',
+        color: '$primary12',
         '&:hover': {
-          backgroundColor: '$primary1',
-          border: '2px solid transparent',
-          color: '$accent1',
+          backgroundColor: '$secondary5',
         },
       },
       gray3: {
         backgroundColor: '$gray3',
         color: '$gray12',
         '&:hover': {
-          backgroundColor: '$gray5',
+          backgroundColor: '$gray4',
         },
       },
       gray4: {
         backgroundColor: '$gray4',
         color: '$gray12',
         '&:hover': {
-          backgroundColor: '$gray6',
+          backgroundColor: '$gray5',
         },
       },
       ghost: {
         backgroundColor: 'transparent',
-        color: '$gray1',
         p: 0,
       },
     },
@@ -80,7 +62,7 @@ const Button = styled('button', {
         borderRadius: 0,
       },
       rounded: {
-        borderRadius: 10,
+        borderRadius: 8,
       },
       pill: {
         borderRadius: 99999,
@@ -153,43 +135,9 @@ const Button = styled('button', {
         p: 0,
       },
     },
-    {
-      variant: 'outlined',
-      color: 'primary',
-      css: {
-        borderColor: '$primary4',
-        color: '$primary4',
-        backgroundColor: 'transparent',
-        borderStyle: 'solid',
-        borderWidth: '1px',
-        '&:hover': {
-          backgroundColor: '$primary12',
-          color: '$primary1',
-          borderColor: '$primary1',
-        },
-      }
-    },
-    {
-      variant: 'outlined',
-      color: 'secondary',
-      css: {
-        borderColor: '$secondary4',
-        color: '$secondary4',
-        backgroundColor: 'transparent',
-        borderStyle: 'solid',
-        borderWidth: '1px',
-        '&:hover': {
-          backgroundColor: '$secondary12',
-          color: '$secondary1',
-          borderColor: '$secondary1',
-        },
-      }
-    }
-
   ],
   defaultVariants: {
     color: 'primary',
-    variant: 'contained',
     corners: 'rounded',
     size: 'medium',
   },
