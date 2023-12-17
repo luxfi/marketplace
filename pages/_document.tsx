@@ -58,7 +58,7 @@ class MyDocument extends Document {
         <title>LUX | DeFi credit card, blockchain, bridge, exchange and wallet.</title>
         <meta
           name="description"
-          content="LUX is a DeFi credit card, blockchain, bridge, exchange and wallet."
+          content="Lux is a DeFi credit card, blockchain, bridge, exchange and wallet."
         />
         <meta name="keywords" content="Blockchain, Ethereum, Crypto DeFI, NFT, API, Protocol, Real World Assets, RWAs" />
 
@@ -68,11 +68,11 @@ class MyDocument extends Document {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="LUX is a DeFi credit card, blockchain, bridge, exchange and wallet."
+          content="Lux is a DeFi credit card, blockchain, bridge, exchange and wallet."
         />
         <meta
           name="twitter:description"
-          content="LUX is a DeFi credit card, blockchain, bridge, exchange and wallet."
+          content="Lux is a DeFi credit card, blockchain, bridge, exchange and wallet."
         />
         <meta name="twitter:site" content="@luxdefi" />
 

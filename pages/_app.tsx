@@ -58,7 +58,7 @@ const { chains, publicClient } = configureChains(supportedChains, [
 ])
 
 const { connectors } = getDefaultWallets({
-  appName: 'Reservoir NFT Explorer',
+  appName: 'Lux Market',
   projectId: WALLET_CONNECT_PROJECT_ID,
   chains,
 })

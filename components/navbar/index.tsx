@@ -66,7 +66,7 @@ const Navbar = () => {
           <Link href={`/${routePrefix}`}>
             <Box css={{ width: 46, cursor: 'pointer' }}>
               <Image
-                src="/reservoirLogo.svg"
+                src="/logo.png"
                 width={36}
                 height={36}
                 alt="Reservoir"
@@ -115,7 +115,7 @@ const Navbar = () => {
           <Link href={`/${routePrefix}`}>
             <Box css={{ cursor: 'pointer' }}>
               <Image
-                src="/reservoirLogo.svg"
+                src="/logo.png"
                 width={36}
                 height={36}
                 alt="Reservoir"
@@ -150,27 +150,8 @@ const Navbar = () => {
                 </Card>
               </HoverCard.Content>
             </HoverCard.Root>
-
-            {false && (
-              <Link href={`/${routePrefix}/collections/minting`}>
-                <NavItem>Mints</NavItem>
-              </Link>
-            )}
-            {false && (
-              <Link href="/swap">
-                <NavItem>Tokens</NavItem>
-              </Link>
-            )}
           </Flex>
         </Flex>
-      </Box>
-      <Box css={{ flex: 1, px: '$5' }}>
-        <GlobalSearch
-          ref={searchRef}
-          placeholder="Search collections and addresses"
-          containerCss={{ width: '100%' }}
-          key={router.asPath}
-        />
       </Box>
 
       <Flex
@@ -184,58 +165,15 @@ const Navbar = () => {
         justify="end"
         align="center"
       >
-        <Flex css={{ gap: '$5', mr: 12 }}>
-          <Box>
-            <HoverCard.Root openDelay={120}>
-              <HoverCard.Trigger>
-                <a target="_blank" href={`https://docs.reservoir.tools/docs`}>
-                  <NavItem>Developers</NavItem>
-                </a>
-              </HoverCard.Trigger>
-              <HoverCard.Content sideOffset={24} align="start">
-                <Card css={{ p: 24, width: 240 }}>
-                  <Flex css={{ gap: '$4' }} direction="column">
-                    <a target="_blank" href={`https://reservoir.tools`}>
-                      <NavItem>About Reservoir</NavItem>
-                    </a>
-                    <a
-                      target="_blank"
-                      href={`https://docs.reservoir.tools/docs`}
-                    >
-                      <NavItem>Docs</NavItem>
-                    </a>
-
-                    <a
-                      target="_blank"
-                      href={`https://docs.reservoir.tools/reference/overview`}
-                    >
-                      <NavItem>API Reference</NavItem>
-                    </a>
-
-                    <a
-                      target="_blank"
-                      href={`https://github.com/reservoirprotocol`}
-                    >
-                      <NavItem>Github</NavItem>
-                    </a>
-
-                    <a href={`https://testnets.reservoir.tools`}>
-                      <NavItem>Testnet Explorer</NavItem>
-                    </a>
-                  </Flex>
-                </Card>
-              </HoverCard.Content>
-            </HoverCard.Root>
-          </Box>
-          {isConnected && (
-            <Link href={`/portfolio/${address || ''}?chain=${routePrefix}`}>
-              <Box css={{ mr: '$2' }}>
-                <NavItem>Portfolio</NavItem>
-              </Box>
-            </Link>
-          )}
-        </Flex>
-
+        <Box css={{ flex: 1, px: '0' }}>
+          <GlobalSearch
+            ref={searchRef}
+            placeholder="Search"
+            containerCss={{ width: '100%' }}
+            key={router.asPath}
+          />
+        </Box>
+        <CartButton css={{ px: '$5' }} />
         {isConnected ? (
           <AccountSidebar />
         ) : (
@@ -243,7 +181,6 @@ const Navbar = () => {
             <ConnectWalletButton />
           </Box>
         )}
-        <CartButton />
       </Flex>
     </Flex>
   )

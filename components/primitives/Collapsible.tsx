@@ -7,9 +7,6 @@ import {
   ReactNode,
   useState,
 } from 'react'
-
-import { styled } from 'stitches.config'
-import * as CollapsiblePrimitive from '@radix-ui/react-collapsible'
 import { AnimatePresence, motion } from 'framer-motion'
 
 export const slideDown = keyframes({
