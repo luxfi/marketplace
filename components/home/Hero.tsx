@@ -52,16 +52,16 @@ const Hero: FC<{
         </video>
       </Box>
       <Flex direction='row' css={{ mt: '$2', gap: '$2'}} className="grid h-[100px] w-[380px] grid-cols-2 gap-4">
-        <Link href={tokenHref}>
-          <Button >
-            Browse Collection
-          </Button>
-        </Link>
         <a href={learnMoreHref}>
           <Button color='secondary'>
             Learn More
           </Button>
         </a>
+        <Link href={tokenHref}>
+          <Button >
+            Buy Now
+          </Button>
+        </Link>
       </Flex>
     </Flex>
   )
