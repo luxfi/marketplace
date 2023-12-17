@@ -19,7 +19,7 @@ const UnsupportedChainBanner = (): JSX.Element => {
           css={{
             px: '40px',
             py: '12px',
-            background: theme === 'dark' ? '$violet6' : '$violet9',
+            background: theme === 'dark' ? '#222' : '#888',
           }}
         >
           <Text
