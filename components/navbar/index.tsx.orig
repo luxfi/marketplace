@@ -63,11 +63,22 @@ const Navbar = () => {
     >
       <Box css={{ flex: 1 }}>
         <Flex align="center">
+<<<<<<< HEAD
+          <Link href={`/${routePrefix}`}>
+            <Box css={{ width: 46, cursor: 'pointer' }}>
+              <Image
+                src="/reservoirLogo.svg"
+                width={36}
+                height={36}
+                alt="Reservoir"
+              />
+=======
           <Link href="https://lux.market">
             <Box css={{ width: 34, cursor: 'pointer' }}>
               <span style={{fontSize: '32px'}}>
                 {`▼`}
               </span>
+>>>>>>> 6ba4763 (V2 market UI)
             </Box>
           </Link>
         </Flex>
@@ -109,11 +120,22 @@ const Navbar = () => {
         }}
       >
         <Flex align="center">
+<<<<<<< HEAD
+          <Link href={`/${routePrefix}`}>
+            <Box css={{ cursor: 'pointer' }}>
+              <Image
+                src="/reservoirLogo.svg"
+                width={36}
+                height={36}
+                alt="Reservoir"
+              />
+=======
           <Link href="https://lux.market">
             <Box css={{ width: 22, cursor: 'pointer' }}>
               <span style={{fontSize: '22px'}}>
                 {`▼`}
               </span>
+>>>>>>> 6ba4763 (V2 market UI)
             </Box>
           </Link>
           <Flex

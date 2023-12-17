@@ -71,11 +71,17 @@ const wagmiClient = createConfig({
 
 //CONFIGURABLE: Here you can override any of the theme tokens provided by RK: https://docs.reservoir.tools/docs/reservoir-kit-theming-and-customization
 const reservoirKitThemeOverrides = {
+<<<<<<< HEAD
+  headlineFont: inter.style.fontFamily,
   font: inter.style.fontFamily,
+  primaryColor: '#6E56CB',
+  primaryHoverColor: '#644fc1',
+=======
   headlineFont: 'Inter',
   font: 'Inter',
   primaryColor: '#444',
   primaryHoverColor: 'white',
+>>>>>>> 6ba4763 (V2 market UI)
 }
 
 function AppWrapper(props: AppProps & { baseUrl: string }) {
@@ -195,7 +201,7 @@ function MyApp({
             normalizeRoyalties: NORMALIZE_ROYALTIES,
             //CONFIGURABLE: Set your marketplace fee and recipient, (fee is in BPS)
             // Note that this impacts orders created on your marketplace (offers/listings)
-            marketplaceFees: ['0xFdfc45A5a836C3F07f80eCf91cE2D4200A3Db264:250'],
+            marketplaceFees: ['0x03508bB71268BBA25ECaCC8F620e01866650532c:250'],
           }}
           theme={reservoirKitTheme}
         >
