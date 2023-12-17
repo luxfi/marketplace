@@ -71,12 +71,10 @@ const wagmiClient = createConfig({
 
 //CONFIGURABLE: Here you can override any of the theme tokens provided by RK: https://docs.reservoir.tools/docs/reservoir-kit-theming-and-customization
 const reservoirKitThemeOverrides = {
+  headlineFont: inter.style.fontFamily,
   font: inter.style.fontFamily,
-  headlineFont: 'Inter',
-  font: 'Inter',
-  fontFamily: 'Inter',
-  primaryColor: '#444',
-  primaryHoverColor: 'white',
+  primaryColor: '#6E56CB',
+  primaryHoverColor: '#644fc1',
 }
 
 function AppWrapper(props: AppProps & { baseUrl: string }) {
@@ -127,42 +125,16 @@ function MyApp({
     if (theme == 'dark') {
       setReservoirKitTheme(reservoirDarkTheme(reservoirKitThemeOverrides))
       setRainbowKitTheme(
-        Object.assign(rainbowDarkTheme({
-          accentColor: 'white',
-          accentColorForeground: '#111',
-          borderRadius: 'medium',
-          fontStack: 'system',
-          overlayBlur: 'small',
-        }), {
-        colors: {
-          actionButtonSecondaryBackground: '#000',
-          actionButtonBorder: '#111',
-          closeButton: 'black',
-          closeButtonBackground: 'white',
-          modalBackground: '#111',
-          modalBorder: '#111',
-        }
-      }))
+        rainbowDarkTheme({
+          borderRadius: 'small',
+        })
+      )
     } else {
       setReservoirKitTheme(reservoirLightTheme(reservoirKitThemeOverrides))
       setRainbowKitTheme(
-        Object.assign({},
-          rainbowLightTheme({
-              borderRadius: 'medium',
-              fontStack: 'system',
-              overlayBlur: 'small',
-          }),
-          {
-            colors: {
-              actionButtonSecondaryBackground: '#000',
-              actionButtonBorder: '#111',
-              closeButton: 'black',
-              closeButtonBackground: 'white',
-              modalBackground: '#111',
-              modalBorder: '#111',
-            }
-          }
-        )
+        rainbowLightTheme({
+          borderRadius: 'small',
+        })
       )
     }
   }, [theme])
@@ -222,7 +194,7 @@ function MyApp({
             normalizeRoyalties: NORMALIZE_ROYALTIES,
             //CONFIGURABLE: Set your marketplace fee and recipient, (fee is in BPS)
             // Note that this impacts orders created on your marketplace (offers/listings)
-            marketplaceFees: ['0xFdfc45A5a836C3F07f80eCf91cE2D4200A3Db264:250'],
+            marketplaceFees: ['0x03508bB71268BBA25ECaCC8F620e01866650532c:250'],
           }}
           theme={reservoirKitTheme}
         >
