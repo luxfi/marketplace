@@ -1,22 +1,26 @@
 import {
+  blackA,
+  blackA,
   crimson,
-  slate,
   crimsonDark,
-  violetDark,
-  slateDark,
-  greenDark,
-  iris,
-  irisDark,
+  gray,
   gray,
   green,
-  violetDarkA,
-  whiteA,
-  redDark,
+  greenDark,
+  indigo,
+  iris,
+  irisDark,
   red,
-  blackA,
+  red,
+  redDark,
+  redDark,
+  slate,
+  slateDark,
   violet,
   violetA,
-  indigo,
+  violetDark,
+  violetDarkA,
+  whiteA,
 } from '@radix-ui/colors'
 import { createStitches } from '@stitches/react'
 import type * as Stitches from '@stitches/react'
@@ -78,6 +82,7 @@ export const { createTheme, keyframes, styled, globalCss, getCssText } =
         secondary12: '#11181c',
 
         //Gray
+        /*
         gray1: '$slate1',
         gray2: '$slate2',
         gray3: '$slate3',
@@ -90,6 +95,7 @@ export const { createTheme, keyframes, styled, globalCss, getCssText } =
         gray10: '$slate10',
         gray11: '$slate11',
         gray12: '$slate12',
+        */
 
         //Red
         red1: '$crimson1',

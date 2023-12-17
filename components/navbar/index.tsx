@@ -234,12 +234,9 @@ const Navbar = () => {
           )}
         </Flex>
 
-<<<<<<< HEAD
-=======
       <Flex css={{ gap: '$3' }} justify="end" align="center">
-        {/* <ThemeSwitcher /> */}
-        <ChainSwitcher />
->>>>>>> 0baac1d (rebuilt hero as per previous version;)
+        <ThemeSwitcher />
+
         {isConnected ? (
           <AccountSidebar />
         ) : (
